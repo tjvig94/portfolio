@@ -8,3 +8,7 @@ li.nav-link:hover {
     cursor: pointer;
     color: gray;
 }
+
+img.app-img {
+    width:100%;
+}
