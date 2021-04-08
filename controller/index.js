@@ -12,4 +12,6 @@ router.get('/portfolio', (req, res) => {
     res.render('portfolio');
 })
 
+router.get('/')
+
 module.exports = router;
