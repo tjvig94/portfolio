@@ -4,23 +4,22 @@ $(document).ready(function() {
     const aboutMeBtn = $(".about-me-btn");
     const portfolioBtn = $(".portfolio-btn");
 
-    // Need to make a single function for request handler
+    const requestHandler = async (endpoint) => {        
+            const response = await $.get(endpoint);
+            (response) ? document.location.replace(endpoint) : "";
+    };
 
-    homeBtn.on('click', async (event) => {
+    homeBtn.on('click', async () => {
         try {
-            event.preventDefault();
-            const response = await $.get('/');
-            (response) ? document.location.replace('/') : "";
+            requestHandler('/');
         } catch {
             return;
         }
     });
 
-    aboutMeBtn.on('click', async (event) => {
+    aboutMeBtn.on('click', async () => {
         try {
-            event.preventDefault();
-            const response = await $.get('/about-me');
-            (response) ? document.location.replace('/about-me') : "";
+            requestHandler('/about-me');
         } catch {
             return;
         }
@@ -28,9 +27,7 @@ $(document).ready(function() {
 
     portfolioBtn.on('click', async (event) => {
         try {
-            event.preventDefault();
-            const response = await $.get('/portfolio');
-            (response) ? document.location.replace('/portfolio') : "";
+            requestHandler('/portfolio');
         } catch {
             return;
         }
