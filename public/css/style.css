@@ -3,3 +3,8 @@ img.headshot {
     padding-bottom: 12px;
     margin: 0;
 }
+
+li.nav-link:hover {
+    cursor: pointer;
+    color: gray;
+}
