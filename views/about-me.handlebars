@@ -1,21 +1,17 @@
 <main class="about-me">
-        <div class="container">
-            <div class="row">
+        <div class="container text-center">
+            <div class="row mb-5">
                 <div class="col-12">
                     <h1 id="about">This Is Me</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="container cards">
-                    <div class="row">
-                        {{#each aboutMe}}                       
-                        <div class="col this-is-me">
-                            <h3>{{this.title}}</h3>
-                            <p>{{this.desc}}</p>
-                        </div>
-                        {{/each}}
-                    </div>
+                {{#each aboutMe}}                       
+                <div class="col-lg-3 this-is-me">
+                    <h3>{{this.title}}</h3>
+                    <p>{{this.desc}}</p>
                 </div>
+                {{/each}}
             </div>
         </div>
     </main>
