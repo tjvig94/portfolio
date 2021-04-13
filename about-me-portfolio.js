@@ -1,7 +1,7 @@
 const aboutMe = [
     {
         title: "A Growing Web Developer",
-        desc: "I am a quick and eager learner who continually strives to improve my craft of developing responsive and attractive web pages. Currently enrolled in the University of New Hampshire's Full-Stack Web Development Bootcamp."
+        desc: "I am a quick and eager learner who continually strives to improve my craft of developing responsive and attractive web pages. Currently enrolled in the University of New Hampshire's Full-Stack Web Development Bootcamp. Skills in HTML5, CSS3, ES6, Nodejs, Express, SQL, NoSQL, and React."
     },
     {
         title: "Educator",
